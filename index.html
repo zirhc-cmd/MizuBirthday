@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday - Spotify Playlist</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <button class="back-btn"><i class="fas fa-chevron-left"></i></button>
+            </div>
+            <div class="header-center">
+                <span class="playlist-label">PLAYLIST</span>
+            </div>
+            <div class="header-right">
+                <button class="menu-btn"><i class="fas fa-ellipsis-v"></i></button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Playlist Hero -->
+            <section class="playlist-hero">
+                <div class="playlist-cover">
+                    <!-- ============================================
+                         COVER FOTO - EDIT DI SINI
+                         ============================================
+                         Cara mengganti foto cover:
+                         1. Ganti "images/cover-photo.jpg" dengan path foto Anda
+                         2. Contoh: "images/fotoku.jpg" atau URL foto online
+                         3. Format yang didukung: jpg, jpeg, png, webp
+                         4. Ukuran foto direkomendasikan 1:1 (kotak)
+                         ============================================ -->
+                    <div class="cover-image">
+                        <img src="image/Cover.JPG" alt="Cover Playlist" class="cover-photo-img" id="coverPhoto">
+                        <div class="birthday-badge">20</div>
+                    </div>
+                </div>
+                <div class="playlist-info">
+                    <h1 class="playlist-title">Happy Birthday Michaaa</h1>
+                    <p class="playlist-description">
+                        Playlist untuk Michaaa yang hari ini berusia 20 tahun. 
+                        Semoga harimu selalu diberkati.
+                    </p>
+                    <div class="playlist-meta">
+                        <span class="spotify-logo"><i class="fab fa-spotify"></i> Spotify</span>
+                        <span class="dot">•</span>
+                        <span class="song-count">5 lagu, 21 menit</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Action Buttons -->
+            <section class="action-buttons">
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+                <button class="play-btn" id="mainPlayBtn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+            </section>
+
+            <!-- ============================================
+                 GALERI FOTO - EDIT DI SINI
+                 ============================================
+                 Cara menambahkan foto:
+                 1. Masukkan file foto ke folder "images/"
+                 2. Ganti "images/foto1.jpg" dengan nama file fotomu
+                 3. Format yang didukung: jpg, jpeg, png, webp
+                 4. Ukuran foto direkomendasikan 1:1 (kotak)
+                 ============================================ -->
+            <section class="photo-section">
+                <h2 class="section-title"><i class="fas fa-images"></i> Album Michaaa</h2>
+                <div class="photo-grid">
+                    <!-- FOTO 1 - Edit src di bawah ini -->
+                    <div class="photo-item">
+                        <img src="image/1.JPG" alt="Kenangan 1" class="photo-img">
+                    </div>
+                    <!-- FOTO 2 - Edit src di bawah ini -->
+                    <div class="photo-item">
+                        <img src="image/3.JPG" alt="Kenangan 2" class="photo-img">
+                    </div>
+                    <!-- FOTO 3 - Edit src di bawah ini -->
+                    <div class="photo-item">
+                        <img src="image/2.JPG" alt="Kenangan 3" class="photo-img">
+                    </div>
+                    <!-- FOTO 4 - Edit src di bawah ini -->
+                    <div class="photo-item">
+                        <img src="image/4.jpeg" alt="Kenangan 4" class="photo-img">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Birthday Message Section -->
+            <section class="message-section">
+                <h2 class="section-title"><i class="fas fa-envelope-open-text"></i> Ucapan Spesial</h2>
+                <div class="message-card">
+                    <div class="message-header">
+                        <div class="playlist-author">
+                            <img src="image/profile.jpeg" alt="Profilku" class="profil-img">
+                        </div>
+                        <div class="message-author">
+                            <span class="author-name">Dari @lowkeychz</span>
+                            <span class="message-date">Senin, 23 Maret 2026</span>
+                        </div>
+                    </div>
+                    <div class="message-content">
+                        <p>
+                            Selamat ulang tahun yang ke-20 Michaa! 🎉
+                        </p>
+                        <p>
+                            Di usia yang baru ini, semoga Michaaa semakin kuat, semakin bahagia, 
+                            dan semakin dekat dengan semua impian. Terima kasih telah menjadi 
+                            bagian indah dalam hidupku, meski sekarang kita sudah berbeda jalan.
+                        </p>
+                        <p>
+                            Semoga harimu dan hatimu selalu penuh kebahagiaan. Tetap jadi Michaa yang Chris kenal. God Bless You!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================================
+                 DAFTAR LAGU - EDIT DI SINI
+                 ============================================
+                 Cara menambahkan lagu:
+                 1. Masukkan file MP3 ke folder "music/"
+                 2. Edit di file js/app.js bagian "DAFTAR LAGU"
+                 3. Ganti path dan informasi lagu sesuai keinginanmu
+                 ============================================ -->
+            <section class="song-list">
+                <h2 class="section-title"><i class="fas fa-list-music"></i> Playlist Lagu</h2>
+                
+                <div class="song-item" data-song="0">
+                    <div class="song-number">1</div>
+                    <div class="song-info">
+                        <h3 class="song-title">Risk It All</h3>
+                        <p class="song-artist">Bruno Mars</p>
+                    </div>
+                    <div class="song-actions">
+                        <button class="song-menu"><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                </div>
+
+                <div class="song-item" data-song="1">
+                    <div class="song-number">2</div>
+                    <div class="song-info">
+                        <h3 class="song-title">Iris</h3>
+                        <p class="song-artist">Goo Goo Dolls</p>
+                    </div>
+                    <div class="song-actions">
+                        <button class="song-menu"><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                </div>
+
+                <div class="song-item" data-song="2">
+                    <div class="song-number">3</div>
+                    <div class="song-info">
+                        <h3 class="song-title">The Man Who Can't Be Moved</h3>
+                        <p class="song-artist">The Script</p>
+                    </div>
+                    <div class="song-actions">
+                        <button class="song-menu"><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                </div>
+
+                <div class="song-item" data-song="3">
+                    <div class="song-number">4</div>
+                    <div class="song-info">
+                        <h3 class="song-title">Anugerah Terindah Yang Pernah Aku Miliki</h3>
+                        <p class="song-artist">Sheila On 7</p>
+                    </div>
+                    <div class="song-actions">
+                        <button class="song-menu"><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                </div>
+
+                <div class="song-item" data-song="4">
+                    <div class="song-number">5</div>
+                    <div class="song-info">
+                        <h3 class="song-title">Tunjukkan Padaku</h3>
+                        <p class="song-artist">Sheila On 7</p>
+                    </div>
+                    <div class="song-actions">
+                        <button class="song-menu"><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Mini Player -->
+        <div class="mini-player" id="miniPlayer">
+            <div class="player-info">
+                <div class="player-cover">
+                    <img src="image/Cover.JPG" alt="Cover Lagu" id="miniPlayerCover" class="mini-cover-img">
+                </div>
+                <div class="player-text">
+                    <span class="player-title" id="playerTitle">Pilih lagu</span>
+                    <span class="player-artist" id="playerArtist">-</span>
+                </div>
+            </div>
+            <div class="player-controls">
+                <button class="control-btn" id="prevBtn"><i class="fas fa-step-backward"></i></button>
+                <button class="control-btn play-pause" id="playPauseBtn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="control-btn" id="nextBtn"><i class="fas fa-step-forward"></i></button>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <!-- Now Playing Modal -->
+        <div class="now-playing-modal" id="nowPlayingModal">
+            <div class="modal-header">
+                <button class="collapse-btn" id="collapseBtn"><i class="fas fa-chevron-down"></i></button>
+                <span class="modal-label">SEDANG DIPUTAR</span>
+                <button class="menu-btn"><i class="fas fa-ellipsis-v"></i></button>
+            </div>
+            <div class="modal-content">
+                <div class="album-art-large">
+                    <img src="image/Cover.JPG" alt="Album Art" id="modalCover" class="modal-cover-img">
+                </div>
+                <div class="track-info">
+                    <h2 class="track-title" id="modalTitle"></h2>
+                    <p class="track-artist" id="modalArtist"></p>
+                </div>
+                <div class="progress-section">
+                    <div class="progress-bar-large">
+                        <div class="progress-fill-large" id="modalProgressFill"></div>
+                    </div>
+                    <div class="time-labels">
+                        <span id="currentTime">0:00</span>
+                        <span id="totalTime">3:45</span>
+                    </div>
+                </div>
+                <div class="controls-large">
+                    <button class="control-btn-large shuffle"><i class="fas fa-random"></i></button>
+                    <button class="control-btn-large" id="modalPrevBtn"><i class="fas fa-step-backward"></i></button>
+                    <button class="control-btn-large play-pause-large" id="modalPlayBtn">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button class="control-btn-large" id="modalNextBtn"><i class="fas fa-step-forward"></i></button>
+                    <button class="control-btn-large repeat"><i class="fas fa-redo"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Audio Element (Hidden) -->
+        <audio id="audioPlayer" preload="metadata"></audio>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made For Mizu</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
